@@ -771,7 +771,7 @@ const FormContent = () => {
         {/* Subtítulo Familiar */}
         <h3 className="text-md font-semibold mb-2">Familiar</h3>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4">
           <div className="mb-4">
             <label
               htmlFor="nombresFamiliar"
@@ -923,7 +923,7 @@ const FormContent = () => {
         {/* Subtítulo Personal */}
         <h3 className="text-md font-semibold mb-2">Personal</h3>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4">
           <div className="mb-4">
             <label
               htmlFor="nombresPersonal"
