@@ -10,32 +10,53 @@ const InputField = ({ label, name, control, type = "text", options }) => (
       name={name}
       control={control}
       defaultValue=""
-      render={({ field }) =>
-        type === "select" ? (
-          <select
-            {...field}
-            className="mt-1 p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
-          >
-            {options.map((option) => (
-              <option key={option.value} value={option.value}>
-                {option.label}
-              </option>
-            ))}
-          </select>
-        ) : (
-          <input
-            {...field}
-            type={type}
-            className="mt-1 p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
-          />
-        )
-      }
+      rules={{ required: `${label} es obligatorio` }}
+      render={({ field, fieldState }) => (
+        <div>
+          {type === "select" ? (
+            <select
+              {...field}
+              className={`mt-1 p-2 w-full border rounded-md shadow-sm focus:ring ${
+                fieldState.invalid
+                  ? "focus:ring-red-300"
+                  : "focus:ring-blue-300"
+              }`}
+            >
+              {options.map((option) => (
+                <option key={option.value} value={option.value}>
+                  {option.label}
+                </option>
+              ))}
+            </select>
+          ) : (
+            <input
+              {...field}
+              type={type}
+              className={`mt-1 p-2 w-full border rounded-md shadow-sm focus:ring ${
+                fieldState.invalid
+                  ? "focus:ring-red-300"
+                  : "focus:ring-blue-300"
+              }`}
+            />
+          )}
+          {fieldState.invalid && (
+            <p className="text-red-500 text-sm mt-1">
+              {fieldState.error.message}
+            </p>
+          )}
+        </div>
+      )}
     />
   </div>
 );
 
 const FormContent = () => {
-  const { control, handleSubmit } = useForm();
+  const {
+    control,
+    handleSubmit,
+    formState: { isDirty, isSubmitting },
+    setError,
+  } = useForm();
 
   const onSubmit = (data) => {
     console.log(data);
@@ -250,6 +271,7 @@ const FormContent = () => {
         <h2 className="text-lg font-semibold mb-2 w-full">
           Información Financiera
         </h2>
+
         <InputField
           label="Total Ingresos"
           name="totalIngresos"
@@ -294,92 +316,92 @@ const FormContent = () => {
 
         {/* Subtítulo Familiar */}
         <h3 className="text-md font-semibold mb-2">Familiar</h3>
-        <InputField
-          label="Nombres Familiar"
-          name="nombresFamiliar"
-          control={control}
-        />
-        <InputField
-          label="Apellido Familiar"
-          name="apellidoFamiliar"
-          control={control}
-        />
-        <InputField
-          label="Dirección Familiar"
-          name="direccionFamiliar"
-          control={control}
-        />
-        <InputField
-          label="Ciudad Familiar"
-          name="ciudadFamiliar"
-          control={control}
-        />
-        <InputField
-          label="Teléfono Familiar"
-          name="telefonoFamiliar"
-          control={control}
-          type="tel"
-        />
-        <InputField
-          label="Email Familiar"
-          name="emailFamiliar"
-          control={control}
-          type="email"
-        />
-        <InputField
-          label="Parentesco Familiar"
-          name="parentescoFamiliar"
-          control={control}
-        />
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4">
+          <InputField
+            label="Nombres"
+            name="nombresFamiliar"
+            control={control}
+          />
+          <InputField
+            label="Apellidos"
+            name="apellidosFamiliar"
+            control={control}
+          />
+          <InputField
+            label="Dirección"
+            name="direccionFamiliar"
+            control={control}
+          />
+          <InputField label="Ciudad" name="ciudadFamiliar" control={control} />
+          <InputField
+            label="Teléfono"
+            name="telefonoFamiliar"
+            control={control}
+            type="tel"
+          />
+          <InputField
+            label="Email"
+            name="emailFamiliar"
+            control={control}
+            type="email"
+          />
+          <InputField
+            label="Parentesco"
+            name="parentescoFamiliar"
+            control={control}
+          />
+        </div>
 
         {/* Subtítulo Personal */}
         <h3 className="text-md font-semibold mb-2 mt-4">Personal</h3>
-        <InputField
-          label="Nombres Personal"
-          name="nombresPersonal"
-          control={control}
-        />
-        <InputField
-          label="Apellido Personal"
-          name="apellidoPersonal"
-          control={control}
-        />
-        <InputField
-          label="Dirección Personal"
-          name="direccionPersonal"
-          control={control}
-        />
-        <InputField
-          label="Ciudad Personal"
-          name="ciudadPersonal"
-          control={control}
-        />
-        <InputField
-          label="Teléfono Personal"
-          name="telefonoPersonal"
-          control={control}
-          type="tel"
-        />
-        <InputField
-          label="Email Personal"
-          name="emailPersonal"
-          control={control}
-          type="email"
-        />
-        <InputField
-          label="Parentesco Personal"
-          name="parentescoPersonal"
-          control={control}
-        />
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4">
+          <InputField
+            label="Nombres"
+            name="nombresPersonal"
+            control={control}
+          />
+          <InputField
+            label="Apellidos"
+            name="apellidosPersonal"
+            control={control}
+          />
+          <InputField
+            label="Dirección"
+            name="direccionPersonal"
+            control={control}
+          />
+          <InputField label="Ciudad" name="ciudadPersonal" control={control} />
+          <InputField
+            label="Teléfono"
+            name="telefonoPersonal"
+            control={control}
+            type="tel"
+          />
+          <InputField
+            label="Email"
+            name="emailPersonal"
+            control={control}
+            type="email"
+          />
+          <InputField
+            label="Parentesco"
+            name="parentescoPersonal"
+            control={control}
+          />
+        </div>
       </div>
 
-      {/* Botón de enviar */}
-      <button
-        type="submit"
-        className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg mt-4"
-      >
-        Generar PDF
-      </button>
+      <div className="text-center">
+        <button
+          type="submit"
+          disabled={!isDirty || isSubmitting}
+          className="py-2 px-4 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg shadow-md focus:outline-none focus:ring focus:ring-blue-300 disabled:opacity-50"
+        >
+          Generar PDF
+        </button>
+      </div>
     </form>
   );
 };
