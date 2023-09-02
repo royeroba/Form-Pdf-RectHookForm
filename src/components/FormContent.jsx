@@ -772,7 +772,7 @@ const FormContent = () => {
         <h3 className="text-md font-semibold mb-2">Familiar</h3>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4">
-          <div className="mb-4">
+          <div className="mb-2">
             <label
               htmlFor="nombresFamiliar"
               className="block text-sm font-medium text-gray-700"
@@ -787,13 +787,13 @@ const FormContent = () => {
                 <input
                   {...field}
                   type="text"
-                  className="mt-1 p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
+                  className="p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
                 />
               )}
             />
           </div>
 
-          <div className="mb-4">
+          <div className="mb-2">
             <label
               htmlFor="apellidoFamiliar"
               className="block text-sm font-medium text-gray-700"
@@ -808,13 +808,13 @@ const FormContent = () => {
                 <input
                   {...field}
                   type="text"
-                  className="mt-1 p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
+                  className="p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
                 />
               )}
             />
           </div>
 
-          <div className="mb-4">
+          <div className="mb-2">
             <label
               htmlFor="direccionFamiliar"
               className="block text-sm font-medium text-gray-700"
@@ -829,13 +829,13 @@ const FormContent = () => {
                 <input
                   {...field}
                   type="text"
-                  className="mt-1 p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
+                  className="p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
                 />
               )}
             />
           </div>
 
-          <div className="mb-4">
+          <div className="mb-2">
             <label
               htmlFor="ciudadFamiliar"
               className="block text-sm font-medium text-gray-700"
@@ -850,13 +850,13 @@ const FormContent = () => {
                 <input
                   {...field}
                   type="text"
-                  className="mt-1 p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
+                  className="p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
                 />
               )}
             />
           </div>
 
-          <div className="mb-4">
+          <div className="mb-2">
             <label
               htmlFor="telefonoFamiliar"
               className="block text-sm font-medium text-gray-700"
@@ -871,13 +871,13 @@ const FormContent = () => {
                 <input
                   {...field}
                   type="tel"
-                  className="mt-1 p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
+                  className="p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
                 />
               )}
             />
           </div>
 
-          <div className="mb-4">
+          <div className="mb-2">
             <label
               htmlFor="emailFamiliar"
               className="block text-sm font-medium text-gray-700"
@@ -892,13 +892,13 @@ const FormContent = () => {
                 <input
                   {...field}
                   type="email"
-                  className="mt-1 p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
+                  className="p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
                 />
               )}
             />
           </div>
 
-          <div className="mb-4">
+          <div className="mb-2">
             <label
               htmlFor="parentescoFamiliar"
               className="block text-sm font-medium text-gray-700"
@@ -913,7 +913,7 @@ const FormContent = () => {
                 <input
                   {...field}
                   type="text"
-                  className="mt-1 p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
+                  className="p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
                 />
               )}
             />
@@ -921,10 +921,10 @@ const FormContent = () => {
         </div>
 
         {/* Subtítulo Personal */}
-        <h3 className="text-md font-semibold mb-2">Personal</h3>
+        <h3 className="text-md font-semibold mb-2 mt-4">Personal</h3>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4">
-          <div className="mb-4">
+          <div className="mb-2">
             <label
               htmlFor="nombresPersonal"
               className="block text-sm font-medium text-gray-700"
@@ -939,13 +939,13 @@ const FormContent = () => {
                 <input
                   {...field}
                   type="text"
-                  className="mt-1 p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
+                  className="p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
                 />
               )}
             />
           </div>
 
-          <div className="mb-4">
+          <div className="mb-2">
             <label
               htmlFor="apellidoPersonal"
               className="block text-sm font-medium text-gray-700"
@@ -960,13 +960,13 @@ const FormContent = () => {
                 <input
                   {...field}
                   type="text"
-                  className="mt-1 p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
+                  className="p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
                 />
               )}
             />
           </div>
 
-          <div className="mb-4">
+          <div className="mb-2">
             <label
               htmlFor="direccionPersonal"
               className="block text-sm font-medium text-gray-700"
@@ -981,13 +981,13 @@ const FormContent = () => {
                 <input
                   {...field}
                   type="text"
-                  className="mt-1 p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
+                  className="p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
                 />
               )}
             />
           </div>
 
-          <div className="mb-4">
+          <div className="mb-2">
             <label
               htmlFor="ciudadPersonal"
               className="block text-sm font-medium text-gray-700"
@@ -1002,13 +1002,13 @@ const FormContent = () => {
                 <input
                   {...field}
                   type="text"
-                  className="mt-1 p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
+                  className="p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
                 />
               )}
             />
           </div>
 
-          <div className="mb-4">
+          <div className="mb-2">
             <label
               htmlFor="telefonoPersonal"
               className="block text-sm font-medium text-gray-700"
@@ -1023,13 +1023,13 @@ const FormContent = () => {
                 <input
                   {...field}
                   type="tel"
-                  className="mt-1 p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
+                  className="p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
                 />
               )}
             />
           </div>
 
-          <div className="mb-4">
+          <div className="mb-2">
             <label
               htmlFor="emailPersonal"
               className="block text-sm font-medium text-gray-700"
@@ -1044,13 +1044,13 @@ const FormContent = () => {
                 <input
                   {...field}
                   type="email"
-                  className="mt-1 p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
+                  className="p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
                 />
               )}
             />
           </div>
 
-          <div className="mb-4">
+          <div className="mb-2">
             <label
               htmlFor="parentescoPersonal"
               className="block text-sm font-medium text-gray-700"
@@ -1065,7 +1065,7 @@ const FormContent = () => {
                 <input
                   {...field}
                   type="text"
-                  className="mt-1 p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
+                  className="p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
                 />
               )}
             />
