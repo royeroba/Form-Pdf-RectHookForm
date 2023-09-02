@@ -344,78 +344,129 @@ const FormContent = () => {
       {/* Sección de Referencias */}
       <div className="mb-6 bg-white border rounded-lg shadow-md p-4">
         <h2 className="text-lg font-semibold mb-2">Referencias</h2>
+
+        {/* Subtítulo Familiar */}
         <h3 className="text-md font-semibold mb-2">Familiar</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4">
-          <InputField
-            label="Nombres"
-            name="nombresFamiliar"
-            control={control}
-          />
-          <InputField
-            label="Apellidos"
-            name="apellidosFamiliar"
-            control={control}
-          />
-          <InputField
-            label="Dirección"
-            name="direccionFamiliar"
-            control={control}
-          />
-          <InputField label="Ciudad" name="ciudadFamiliar" control={control} />
-          <InputField
-            label="Teléfono"
-            name="telefonoFamiliar"
-            control={control}
-            type="tel"
-          />
-          <InputField
-            label="Email"
-            name="emailFamiliar"
-            control={control}
-            type="email"
-          />
-          <InputField
-            label="Parentesco"
-            name="parentescoFamiliar"
-            control={control}
-          />
+        <div className="sm:flex flex-wrap -mx-2">
+          <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 px-2 mb-2">
+            <InputField
+              label="Nombres"
+              name="nombresFamiliar"
+              control={control}
+            />
+          </div>
+
+          <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 px-2 mb-2">
+            <InputField
+              label="Apellidos"
+              name="apellidosFamiliar"
+              control={control}
+            />
+          </div>
+
+          <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 px-2 mb-2">
+            <InputField
+              label="Dirección"
+              name="direccionFamiliar"
+              control={control}
+            />
+          </div>
+
+          <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 px-2 mb-2">
+            <InputField
+              label="Ciudad"
+              name="ciudadFamiliar"
+              control={control}
+            />
+          </div>
+
+          <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 px-2 mb-2">
+            <InputField
+              label="Teléfono"
+              name="telefonoFamiliar"
+              control={control}
+              type="tel"
+            />
+          </div>
+
+          <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 px-2 mb-2">
+            <InputField
+              label="Email"
+              name="emailFamiliar"
+              control={control}
+              type="email"
+            />
+          </div>
+
+          <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 px-2">
+            <InputField
+              label="Parentesco"
+              name="parentescoFamiliar"
+              control={control}
+            />
+          </div>
         </div>
 
+        {/* Subtítulo Personal */}
         <h3 className="text-md font-semibold mb-2 mt-4">Personal</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4">
-          <InputField
-            label="Nombres"
-            name="nombresPersonal"
-            control={control}
-          />
-          <InputField
-            label="Apellidos"
-            name="apellidosPersonal"
-            control={control}
-          />
-          <InputField
-            label="Dirección"
-            name="direccionPersonal"
-            control={control}
-          />
-          <InputField label="Ciudad" name="ciudadPersonal" control={control} />
-          <InputField
-            label="Teléfono"
-            name="telefonoPersonal"
-            control={control}
-            type="tel"
-          />
-          <InputField
-            label="Email"
-            name="emailPersonal"
-            control={control}
-            type="email"
-          />
-          <InputField
-            label="Parentesco"
-            name="parentescoPersonal"
-            control={control}
-          />
+        <div className="sm:flex flex-wrap -mx-2">
+          <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 px-2 mb-2">
+            <InputField
+              label="Nombres"
+              name="nombresPersonal"
+              control={control}
+            />
+          </div>
+
+          <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 px-2 mb-2">
+            <InputField
+              label="Apellidos"
+              name="apellidosPersonal"
+              control={control}
+            />
+          </div>
+
+          <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 px-2 mb-2">
+            <InputField
+              label="Dirección"
+              name="direccionPersonal"
+              control={control}
+            />
+          </div>
+
+          <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 px-2 mb-2">
+            <InputField
+              label="Ciudad"
+              name="ciudadPersonal"
+              control={control}
+            />
+          </div>
+
+          <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 px-2 mb-2">
+            <InputField
+              label="Teléfono"
+              name="telefonoPersonal"
+              control={control}
+              type="tel"
+            />
+          </div>
+
+          <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 px-2 mb-2">
+            <InputField
+              label="Email"
+              name="emailPersonal"
+              control={control}
+              type="email"
+            />
+          </div>
+
+          <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 px-2">
+            <InputField
+              label="Parentesco"
+              name="parentescoPersonal"
+              control={control}
+            />
+          </div>
         </div>
       </div>
 
