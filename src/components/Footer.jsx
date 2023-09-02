@@ -1,9 +1,9 @@
 const Footer = () => {
   return (
-    <footer className="fixed bottom-0 w-full bg-black text-white py-4 text-center font-bold sm:p-6 md:p-8 lg:p-10 xl:p-12">
+    <footer className="w-full bg-gray-100 text-black py-4 text-center font-bold p-4 md:p-6">
       <h2>
         Creado por{" "}
-        <span className="animate-bounce inline-block p-2 text-white uppercase font-bold">
+        <span className="inline-block p-2 text-black uppercase font-bold">
           royerobadev
         </span>{" "}
         - Todos los derechos reservados

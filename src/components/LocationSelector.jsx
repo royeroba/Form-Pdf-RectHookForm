@@ -26,7 +26,6 @@ const LocationSelector = ({ selectedCity, setSelectedCity }) => {
 
   return (
     <div className="w-1/2">
-      <label className="block font-medium text-gray-700 mb-1">Ciudad:</label>
       <Select
         options={cityOptions}
         value={selectedCity}

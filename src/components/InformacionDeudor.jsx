@@ -4,7 +4,6 @@ import LocationSelector from "./LocationSelector";
 
 const selectOptions = {
   tipoIdentificacion: ["CC", "CE", "PPT"],
-  lugarNacimiento: ["Barranquilla", "Bogotá"],
   lugarExpedicion: ["Barranquilla", "Bogotá"],
   ciudadResidencia: ["Barranquilla", "Bogotá"],
   nivelEscolaridad: [
@@ -41,8 +40,8 @@ const fields = [
   {
     label: "Lugar de Nacimiento",
     name: "lugarNacimiento",
-    type: "select",
-    options: selectOptions.lugarNacimiento,
+    type: "custom",
+    component: <LocationSelector />,
   },
   {
     label: "Lugar de Expedición",

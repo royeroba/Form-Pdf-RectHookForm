@@ -43,6 +43,8 @@ const SolicitudCredito = () => {
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="grid grid-cols-4 gap-5">
           <div className="col-span-4">
+            <label className="block  text-black mb-1">Ciudad:</label>
+
             <LocationSelector
               selectedCity={selectedCity}
               setSelectedCity={setSelectedCity}
