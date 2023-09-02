@@ -286,42 +286,59 @@ const FormContent = () => {
           Información Financiera
         </h2>
 
-        <InputField
-          label="Total Ingresos"
-          name="totalIngresos"
-          control={control}
-          type="number"
-        />
-        <InputField
-          label="Otros Ingresos"
-          name="otrosIngresos"
-          control={control}
-          type="number"
-        />
-        <InputField
-          label="Total Egresos"
-          name="totalEgresos"
-          control={control}
-          type="number"
-        />
-        <InputField
-          label="Activos"
-          name="activos"
-          control={control}
-          type="number"
-        />
-        <InputField
-          label="Pasivos"
-          name="pasivos"
-          control={control}
-          type="number"
-        />
-        <InputField
-          label="Patrimonio"
-          name="patrimonio"
-          control={control}
-          type="number"
-        />
+        <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 xl:w-1/6 mb-4 sm:mb-2 pr-2">
+          <InputField
+            label="Total Ingresos"
+            name="totalIngresos"
+            control={control}
+            type="number"
+          />
+        </div>
+
+        <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 xl:w-1/6 mb-4 sm:mb-2 pr-2">
+          <InputField
+            label="Otros Ingresos"
+            name="otrosIngresos"
+            control={control}
+            type="number"
+          />
+        </div>
+
+        <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 xl:w-1/6 mb-4 sm:mb-2 pr-2">
+          <InputField
+            label="Total Egresos"
+            name="totalEgresos"
+            control={control}
+            type="number"
+          />
+        </div>
+
+        <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 xl:w-1/6 mb-4 sm:mb-2 pr-2">
+          <InputField
+            label="Activos"
+            name="activos"
+            control={control}
+            type="number"
+          />
+        </div>
+
+        <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 xl:w-1/6 mb-4 sm:mb-2 pr-2">
+          <InputField
+            label="Pasivos"
+            name="pasivos"
+            control={control}
+            type="number"
+          />
+        </div>
+
+        <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 xl:w-1/6">
+          <InputField
+            label="Patrimonio"
+            name="patrimonio"
+            control={control}
+            type="number"
+          />
+        </div>
       </div>
 
       {/* Sección de Referencias */}
