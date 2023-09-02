@@ -104,51 +104,74 @@ const FormContent = () => {
         <h2 className="text-lg font-semibold mb-2 w-full">
           Información Deudor
         </h2>
-        <InputField label="Nombres" name="nombres" control={control} />
-        <InputField label="Apellidos" name="apellidos" control={control} />
-        <InputField
-          label="Tipo de Identificación"
-          name="tipoIdentificacion"
-          control={control}
-          type="select"
-          options={[
-            { label: "CC", value: "CC" },
-            { label: "CE", value: "CE" },
-            { label: "PPT", value: "PPT" },
-          ]}
-        />
-        <InputField
-          label="Identificación"
-          name="identificacion"
-          control={control}
-          type="number"
-        />
-        <InputField
-          label="Fecha de Nacimiento"
-          name="fechaNacimiento"
-          control={control}
-          type="date"
-        />
-        <InputField
-          label="Lugar de Nacimiento"
-          name="lugarNacimiento"
-          control={control}
-        />
-        <InputField
-          label="Fecha de Expedición"
-          name="fechaExpedicion"
-          control={control}
-          type="date"
-        />
-        <InputField
-          label="Lugar de Expedición"
-          name="lugarExpedicion"
-          control={control}
-        />
-        <div className="mb-4 sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/6">
-          <label className="block text-sm font-medium text-gray-700">
-            Género:
-          </label>
+
+        <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 mb-4 sm:mb-2 pr-2">
+          <InputField label="Nombres" name="nombres" control={control} />
+        </div>
+
+        <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 mb-4 sm:mb-2 pr-2">
+          <InputField label="Apellidos" name="apellidos" control={control} />
+        </div>
+
+        <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 mb-4 sm:mb-2 pr-2">
+          <InputField
+            label="Tipo de Identificación"
+            name="tipoIdentificacion"
+            control={control}
+            type="select"
+            options={[
+              { label: "CC", value: "CC" },
+              { label: "CE", value: "CE" },
+              { label: "PPT", value: "PPT" },
+            ]}
+          />
+        </div>
+
+        <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 mb-4 sm:mb-2 pr-2">
+          <InputField
+            label="Identificación"
+            name="identificacion"
+            control={control}
+            type="number"
+          />
+        </div>
+
+        <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 mb-4 sm:mb-2 pr-2">
+          <InputField
+            label="Fecha de Nacimiento"
+            name="fechaNacimiento"
+            control={control}
+            type="date"
+          />
+        </div>
+
+        <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 mb-4 sm:mb-2 pr-2">
+          <InputField
+            label="Lugar de Nacimiento"
+            name="lugarNacimiento"
+            control={control}
+          />
+        </div>
+
+        <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 mb-4 sm:mb-2 pr-2">
+          <InputField
+            label="Fecha de Expedición"
+            name="fechaExpedicion"
+            control={control}
+            type="date"
+          />
+        </div>
+
+        <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 mb-4 sm:mb-2 pr-2">
+          <InputField
+            label="Lugar de Expedición"
+            name="lugarExpedicion"
+            control={control}
+          />
+        </div>
+
+        <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 mb-4 sm:mb-2 pr-2">
+          <div className="block text-sm font-medium text-gray-700">Género:</div>
           <div className="flex mt-1">
             <div className="mr-2">
               <label htmlFor="generoM" className="inline-flex items-center">
@@ -176,105 +199,85 @@ const FormContent = () => {
             </div>
           </div>
         </div>
-        <InputField
-          label="Dirección"
-          name="direccion"
-          control={control}
-          type="text"
-        />
-        <InputField label="Ciudad" name="ciudad" control={control} />
-        <InputField
-          label="Teléfono Fijo"
-          name="telefonoFijo"
-          control={control}
-          type="tel"
-        />
-        <InputField
-          label="Teléfono Celular"
-          name="telefonoCelular"
-          control={control}
-          type="tel"
-        />
-        <InputField label="Email" name="email" control={control} type="email" />
-        <InputField
-          label="Estado Civil"
-          name="estadoCivil"
-          control={control}
-          type="select"
-          options={[
-            { label: "Soltero", value: "soltero" },
-            { label: "Casado", value: "casado" },
-            { label: "Unión Libre", value: "unionLibre" },
-            { label: "Divorciado", value: "divorciado" },
-            { label: "Viudo", value: "viudo" },
-          ]}
-        />
-        <InputField
-          label="Tipo de Vivienda"
-          name="tipoVivienda"
-          control={control}
-          type="select"
-          options={[
-            { label: "Propia", value: "propia" },
-            { label: "Arrendada", value: "arrendada" },
-            { label: "Familiar", value: "familiar" },
-          ]}
-        />
-        <InputField
-          label="Personas a Cargo"
-          name="personasACargo"
-          control={control}
-          type="number"
-        />
-      </div>
 
-      {/* Sección de Información Laboral */}
-      <div className="mb-6 bg-white border rounded-lg shadow-md p-4 sm:flex flex-wrap">
-        <h2 className="text-lg font-semibold mb-2 w-full">
-          Información Laboral
-        </h2>
-        <InputField
-          label="Nombre de la Empresa"
-          name="nombreEmpresa"
-          control={control}
-        />
-        <InputField
-          label="Fecha de Ingreso"
-          name="fechaIngreso"
-          control={control}
-          type="date"
-        />
-        <InputField label="Cargo" name="cargo" control={control} />
-        <InputField
-          label="Salario Total"
-          name="salarioTotal"
-          control={control}
-          type="number"
-        />
-        <InputField
-          label="Total Descuentos"
-          name="totalDescuentos"
-          control={control}
-          type="number"
-        />
-        <InputField
-          label="Neto a Pagar"
-          name="netoPagar"
-          control={control}
-          type="number"
-        />
-        <InputField
-          label="Dirección de la Empresa"
-          name="direccionEmpresa"
-          control={control}
-        />
-        <InputField
-          label="Teléfono de la Empresa"
-          name="telefonoEmpresa"
-          control={control}
-          type="tel"
-        />
-        <InputField label="Ciudad" name="ciudadEmpresa" control={control} />
+        <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 mb-4 sm:mb-2 pr-2">
+          <InputField
+            label="Dirección"
+            name="direccion"
+            control={control}
+            type="text"
+          />
+        </div>
+
+        <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 mb-4 sm:mb-2 pr-2">
+          <InputField label="Ciudad" name="ciudad" control={control} />
+        </div>
+
+        <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 mb-4 sm:mb-2 pr-2">
+          <InputField
+            label="Teléfono Fijo"
+            name="telefonoFijo"
+            control={control}
+            type="tel"
+          />
+        </div>
+
+        <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 mb-4 sm:mb-2 pr-2">
+          <InputField
+            label="Teléfono Celular"
+            name="telefonoCelular"
+            control={control}
+            type="tel"
+          />
+        </div>
+
+        <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 mb-4 sm:mb-2 pr-2">
+          <InputField
+            label="Email"
+            name="email"
+            control={control}
+            type="email"
+          />
+        </div>
+
+        <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 mb-4 sm:mb-2 pr-2">
+          <InputField
+            label="Estado Civil"
+            name="estadoCivil"
+            control={control}
+            type="select"
+            options={[
+              { label: "Soltero", value: "soltero" },
+              { label: "Casado", value: "casado" },
+              { label: "Unión Libre", value: "unionLibre" },
+              { label: "Divorciado", value: "divorciado" },
+              { label: "Viudo", value: "viudo" },
+            ]}
+          />
+        </div>
+
+        <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 mb-4 sm:mb-2 pr-2">
+          <InputField
+            label="Tipo de Vivienda"
+            name="tipoVivienda"
+            control={control}
+            type="select"
+            options={[
+              { label: "Propia", value: "propia" },
+              { label: "Arrendada", value: "arrendada" },
+              { label: "Familiar", value: "familiar" },
+            ]}
+          />
+        </div>
+
+        <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5">
+          <InputField
+            label="Personas a Cargo"
+            name="personasACargo"
+            control={control}
+            type="number"
+          />
+        </div>
       </div>
 
       {/* Sección de Información Financiera */}
@@ -324,10 +327,7 @@ const FormContent = () => {
       {/* Sección de Referencias */}
       <div className="mb-6 bg-white border rounded-lg shadow-md p-4">
         <h2 className="text-lg font-semibold mb-2">Referencias</h2>
-
-        {/* Subtítulo Familiar */}
         <h3 className="text-md font-semibold mb-2">Familiar</h3>
-
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4">
           <InputField
             label="Nombres"
@@ -364,9 +364,7 @@ const FormContent = () => {
           />
         </div>
 
-        {/* Subtítulo Personal */}
         <h3 className="text-md font-semibold mb-2 mt-4">Personal</h3>
-
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4">
           <InputField
             label="Nombres"
