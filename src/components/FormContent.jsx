@@ -2,7 +2,7 @@ import React from "react";
 import { useForm, Controller } from "react-hook-form";
 
 const InputField = ({ label, name, control, type = "text", options }) => (
-  <div className="mb-4 sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2">
+  <div className="mb-4">
     <label htmlFor={name} className="block text-sm font-medium text-gray-700">
       {label}:
     </label>
@@ -68,24 +68,35 @@ const FormContent = () => {
 
       {/* Sección de Solicitud */}
       <div className="mb-6 bg-white border rounded-lg shadow-md p-4 sm:flex sm:flex-wrap">
-        <InputField
-          label="Ciudad"
-          name="ciudad"
-          control={control}
-          type="text"
-        />
-        <InputField label="Fecha" name="fecha" control={control} type="date" />
-        <InputField
-          label="Destino Crédito"
-          name="destinoCredito"
-          control={control}
-          type="select"
-          options={[
-            { label: "Libre Inversión", value: "libre-inversion" },
-            { label: "Estudio", value: "estudio" },
-            { label: "Vivienda", value: "vivienda" },
-          ]}
-        />
+        <div className="sm:w-1/3 pr-2">
+          <InputField
+            label="Ciudad"
+            name="ciudad"
+            control={control}
+            type="text"
+          />
+        </div>
+        <div className="sm:w-1/3 pr-2">
+          <InputField
+            label="Fecha"
+            name="fecha"
+            control={control}
+            type="date"
+          />
+        </div>
+        <div className="sm:w-1/3">
+          <InputField
+            label="Destino Crédito"
+            name="destinoCredito"
+            control={control}
+            type="select"
+            options={[
+              { label: "Libre Inversión", value: "libre-inversion" },
+              { label: "Estudio", value: "estudio" },
+              { label: "Vivienda", value: "vivienda" },
+            ]}
+          />
+        </div>
       </div>
 
       {/* Sección de Deudor */}
