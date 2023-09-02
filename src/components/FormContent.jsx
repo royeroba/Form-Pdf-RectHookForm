@@ -2,7 +2,7 @@ import React from "react";
 import { useForm, Controller } from "react-hook-form";
 
 const InputField = ({ label, name, control, type = "text", options }) => (
-  <div className="mb-4 sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/6">
+  <div className="mb-4 sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2">
     <label htmlFor={name} className="block text-sm font-medium text-gray-700">
       {label}:
     </label>
@@ -67,7 +67,7 @@ const FormContent = () => {
       <h2 className="text-2xl font-bold mb-4">Solicitud de Crédito</h2>
 
       {/* Sección de Solicitud */}
-      <div className="mb-6 bg-white border rounded-lg shadow-md p-4 sm:flex sm:flex-row flex-col">
+      <div className="mb-6 bg-white border rounded-lg shadow-md p-4 sm:flex sm:flex-wrap">
         <InputField
           label="Ciudad"
           name="ciudad"
@@ -89,7 +89,7 @@ const FormContent = () => {
       </div>
 
       {/* Sección de Deudor */}
-      <div className="mb-6 bg-white border rounded-lg shadow-md p-4 sm:flex flex-wrap">
+      <div className="mb-6 bg-white border rounded-lg shadow-md p-4 sm:flex sm:flex-wrap">
         <h2 className="text-lg font-semibold mb-2 w-full">
           Información Deudor
         </h2>
