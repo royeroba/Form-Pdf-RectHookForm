@@ -451,12 +451,633 @@ const FormContent = () => {
       </div>
 
       {/* Otras secciones similares aquí */}
+      <div className="mb-6 bg-white border rounded-lg shadow-md p-4 sm:flex flex-wrap">
+        <h2 className="text-lg font-semibold mb-2 w-full">
+          Información Laboral
+        </h2>
+
+        <div className="mb-4 sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/6">
+          <label
+            htmlFor="nombreEmpresa"
+            className="block text-sm font-medium text-gray-700"
+          >
+            Nombre de la Empresa:
+          </label>
+          <Controller
+            name="nombreEmpresa"
+            control={control}
+            defaultValue=""
+            render={({ field }) => (
+              <input
+                {...field}
+                type="text"
+                className="mt-1 p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
+              />
+            )}
+          />
+        </div>
+        <div className="mb-4 sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/6">
+          <label
+            htmlFor="fechaIngreso"
+            className="block text-sm font-medium text-gray-700"
+          >
+            Fecha de Ingreso:
+          </label>
+          <Controller
+            name="fechaIngreso"
+            control={control}
+            defaultValue=""
+            render={({ field }) => (
+              <input
+                {...field}
+                type="date"
+                className="mt-1 p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
+              />
+            )}
+          />
+        </div>
+        <div className="mb-4 sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/6">
+          <label
+            htmlFor="cargo"
+            className="block text-sm font-medium text-gray-700"
+          >
+            Cargo:
+          </label>
+          <Controller
+            name="cargo"
+            control={control}
+            defaultValue=""
+            render={({ field }) => (
+              <input
+                {...field}
+                type="text"
+                className="mt-1 p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
+              />
+            )}
+          />
+        </div>
+        <div className="mb-4 sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/6">
+          <label
+            htmlFor="salarioTotal"
+            className="block text-sm font-medium text-gray-700"
+          >
+            Salario Total:
+          </label>
+          <Controller
+            name="salarioTotal"
+            control={control}
+            defaultValue=""
+            render={({ field }) => (
+              <input
+                {...field}
+                type="number"
+                className="mt-1 p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
+              />
+            )}
+          />
+        </div>
+        <div className="mb-4 sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/6">
+          <label
+            htmlFor="totalDescuentos"
+            className="block text-sm font-medium text-gray-700"
+          >
+            Total Descuentos:
+          </label>
+          <Controller
+            name="totalDescuentos"
+            control={control}
+            defaultValue=""
+            render={({ field }) => (
+              <input
+                {...field}
+                type="number"
+                className="mt-1 p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
+              />
+            )}
+          />
+        </div>
+        <div className="mb-4 sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/6">
+          <label
+            htmlFor="netoPagar"
+            className="block text-sm font-medium text-gray-700"
+          >
+            Neto a Pagar:
+          </label>
+          <Controller
+            name="netoPagar"
+            control={control}
+            defaultValue=""
+            render={({ field }) => (
+              <input
+                {...field}
+                type="number"
+                className="mt-1 p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
+              />
+            )}
+          />
+        </div>
+        <div className="mb-4 sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/6">
+          <label
+            htmlFor="direccionEmpresa"
+            className="block text-sm font-medium text-gray-700"
+          >
+            Dirección de la Empresa:
+          </label>
+          <Controller
+            name="direccionEmpresa"
+            control={control}
+            defaultValue=""
+            render={({ field }) => (
+              <input
+                {...field}
+                type="text"
+                className="mt-1 p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
+              />
+            )}
+          />
+        </div>
+        <div className="mb-4 sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/6">
+          <label
+            htmlFor="telefonoEmpresa"
+            className="block text-sm font-medium text-gray-700"
+          >
+            Teléfono de la Empresa:
+          </label>
+          <Controller
+            name="telefonoEmpresa"
+            control={control}
+            defaultValue=""
+            render={({ field }) => (
+              <input
+                {...field}
+                type="tel"
+                className="mt-1 p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
+              />
+            )}
+          />
+        </div>
+        <div className="mb-4 sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/6">
+          <label
+            htmlFor="ciudadEmpresa"
+            className="block text-sm font-medium text-gray-700"
+          >
+            Ciudad:
+          </label>
+          <Controller
+            name="ciudadEmpresa"
+            control={control}
+            defaultValue=""
+            render={({ field }) => (
+              <input
+                {...field}
+                type="text"
+                className="mt-1 p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
+              />
+            )}
+          />
+        </div>
+      </div>
+      {/* Otras secciones similares aquí */}
+      <div className="mb-6 bg-white border rounded-lg shadow-md p-4 sm:flex flex-wrap">
+        <h2 className="text-lg font-semibold mb-2 w-full">
+          Información Financiera
+        </h2>
+
+        <div className="mb-4 sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/6">
+          <label
+            htmlFor="totalIngresos"
+            className="block text-sm font-medium text-gray-700"
+          >
+            Total Ingresos:
+          </label>
+          <Controller
+            name="totalIngresos"
+            control={control}
+            defaultValue=""
+            render={({ field }) => (
+              <input
+                {...field}
+                type="number"
+                className="mt-1 p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
+              />
+            )}
+          />
+        </div>
+        <div className="mb-4 sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/6">
+          <label
+            htmlFor="otrosIngresos"
+            className="block text-sm font-medium text-gray-700"
+          >
+            Otros Ingresos:
+          </label>
+          <Controller
+            name="otrosIngresos"
+            control={control}
+            defaultValue=""
+            render={({ field }) => (
+              <input
+                {...field}
+                type="number"
+                className="mt-1 p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
+              />
+            )}
+          />
+        </div>
+        <div className="mb-4 sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/6">
+          <label
+            htmlFor="totalEgresos"
+            className="block text-sm font-medium text-gray-700"
+          >
+            Total Egresos:
+          </label>
+          <Controller
+            name="totalEgresos"
+            control={control}
+            defaultValue=""
+            render={({ field }) => (
+              <input
+                {...field}
+                type="number"
+                className="mt-1 p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
+              />
+            )}
+          />
+        </div>
+        <div className="mb-4 sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/6">
+          <label
+            htmlFor="activos"
+            className="block text-sm font-medium text-gray-700"
+          >
+            Activos:
+          </label>
+          <Controller
+            name="activos"
+            control={control}
+            defaultValue=""
+            render={({ field }) => (
+              <input
+                {...field}
+                type="number"
+                className="mt-1 p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
+              />
+            )}
+          />
+        </div>
+        <div className="mb-4 sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/6">
+          <label
+            htmlFor="pasivos"
+            className="block text-sm font-medium text-gray-700"
+          >
+            Pasivos:
+          </label>
+          <Controller
+            name="pasivos"
+            control={control}
+            defaultValue=""
+            render={({ field }) => (
+              <input
+                {...field}
+                type="number"
+                className="mt-1 p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
+              />
+            )}
+          />
+        </div>
+        <div className="mb-4 sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/6">
+          <label
+            htmlFor="patrimonio"
+            className="block text-sm font-medium text-gray-700"
+          >
+            Patrimonio:
+          </label>
+          <Controller
+            name="patrimonio"
+            control={control}
+            defaultValue=""
+            render={({ field }) => (
+              <input
+                {...field}
+                type="number"
+                className="mt-1 p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
+              />
+            )}
+          />
+        </div>
+      </div>
+      {/* Otras secciones similares aquí */}
+      <div className="mb-6 bg-white border rounded-lg shadow-md p-4">
+        <h2 className="text-lg font-semibold mb-2">Referencias</h2>
+
+        {/* Subtítulo Familiar */}
+        <h3 className="text-md font-semibold mb-2">Familiar</h3>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="mb-4">
+            <label
+              htmlFor="nombresFamiliar"
+              className="block text-sm font-medium text-gray-700"
+            >
+              Nombres:
+            </label>
+            <Controller
+              name="nombresFamiliar"
+              control={control}
+              defaultValue=""
+              render={({ field }) => (
+                <input
+                  {...field}
+                  type="text"
+                  className="mt-1 p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
+                />
+              )}
+            />
+          </div>
+
+          <div className="mb-4">
+            <label
+              htmlFor="apellidoFamiliar"
+              className="block text-sm font-medium text-gray-700"
+            >
+              Apellido:
+            </label>
+            <Controller
+              name="apellidoFamiliar"
+              control={control}
+              defaultValue=""
+              render={({ field }) => (
+                <input
+                  {...field}
+                  type="text"
+                  className="mt-1 p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
+                />
+              )}
+            />
+          </div>
+
+          <div className="mb-4">
+            <label
+              htmlFor="direccionFamiliar"
+              className="block text-sm font-medium text-gray-700"
+            >
+              Dirección:
+            </label>
+            <Controller
+              name="direccionFamiliar"
+              control={control}
+              defaultValue=""
+              render={({ field }) => (
+                <input
+                  {...field}
+                  type="text"
+                  className="mt-1 p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
+                />
+              )}
+            />
+          </div>
+
+          <div className="mb-4">
+            <label
+              htmlFor="ciudadFamiliar"
+              className="block text-sm font-medium text-gray-700"
+            >
+              Ciudad:
+            </label>
+            <Controller
+              name="ciudadFamiliar"
+              control={control}
+              defaultValue=""
+              render={({ field }) => (
+                <input
+                  {...field}
+                  type="text"
+                  className="mt-1 p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
+                />
+              )}
+            />
+          </div>
+
+          <div className="mb-4">
+            <label
+              htmlFor="telefonoFamiliar"
+              className="block text-sm font-medium text-gray-700"
+            >
+              Teléfono:
+            </label>
+            <Controller
+              name="telefonoFamiliar"
+              control={control}
+              defaultValue=""
+              render={({ field }) => (
+                <input
+                  {...field}
+                  type="tel"
+                  className="mt-1 p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
+                />
+              )}
+            />
+          </div>
+
+          <div className="mb-4">
+            <label
+              htmlFor="emailFamiliar"
+              className="block text-sm font-medium text-gray-700"
+            >
+              Email:
+            </label>
+            <Controller
+              name="emailFamiliar"
+              control={control}
+              defaultValue=""
+              render={({ field }) => (
+                <input
+                  {...field}
+                  type="email"
+                  className="mt-1 p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
+                />
+              )}
+            />
+          </div>
+
+          <div className="mb-4">
+            <label
+              htmlFor="parentescoFamiliar"
+              className="block text-sm font-medium text-gray-700"
+            >
+              Parentesco:
+            </label>
+            <Controller
+              name="parentescoFamiliar"
+              control={control}
+              defaultValue=""
+              render={({ field }) => (
+                <input
+                  {...field}
+                  type="text"
+                  className="mt-1 p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
+                />
+              )}
+            />
+          </div>
+        </div>
+
+        {/* Subtítulo Personal */}
+        <h3 className="text-md font-semibold mb-2">Personal</h3>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="mb-4">
+            <label
+              htmlFor="nombresPersonal"
+              className="block text-sm font-medium text-gray-700"
+            >
+              Nombres:
+            </label>
+            <Controller
+              name="nombresPersonal"
+              control={control}
+              defaultValue=""
+              render={({ field }) => (
+                <input
+                  {...field}
+                  type="text"
+                  className="mt-1 p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
+                />
+              )}
+            />
+          </div>
+
+          <div className="mb-4">
+            <label
+              htmlFor="apellidoPersonal"
+              className="block text-sm font-medium text-gray-700"
+            >
+              Apellido:
+            </label>
+            <Controller
+              name="apellidoPersonal"
+              control={control}
+              defaultValue=""
+              render={({ field }) => (
+                <input
+                  {...field}
+                  type="text"
+                  className="mt-1 p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
+                />
+              )}
+            />
+          </div>
+
+          <div className="mb-4">
+            <label
+              htmlFor="direccionPersonal"
+              className="block text-sm font-medium text-gray-700"
+            >
+              Dirección:
+            </label>
+            <Controller
+              name="direccionPersonal"
+              control={control}
+              defaultValue=""
+              render={({ field }) => (
+                <input
+                  {...field}
+                  type="text"
+                  className="mt-1 p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
+                />
+              )}
+            />
+          </div>
+
+          <div className="mb-4">
+            <label
+              htmlFor="ciudadPersonal"
+              className="block text-sm font-medium text-gray-700"
+            >
+              Ciudad:
+            </label>
+            <Controller
+              name="ciudadPersonal"
+              control={control}
+              defaultValue=""
+              render={({ field }) => (
+                <input
+                  {...field}
+                  type="text"
+                  className="mt-1 p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
+                />
+              )}
+            />
+          </div>
+
+          <div className="mb-4">
+            <label
+              htmlFor="telefonoPersonal"
+              className="block text-sm font-medium text-gray-700"
+            >
+              Teléfono:
+            </label>
+            <Controller
+              name="telefonoPersonal"
+              control={control}
+              defaultValue=""
+              render={({ field }) => (
+                <input
+                  {...field}
+                  type="tel"
+                  className="mt-1 p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
+                />
+              )}
+            />
+          </div>
+
+          <div className="mb-4">
+            <label
+              htmlFor="emailPersonal"
+              className="block text-sm font-medium text-gray-700"
+            >
+              Email:
+            </label>
+            <Controller
+              name="emailPersonal"
+              control={control}
+              defaultValue=""
+              render={({ field }) => (
+                <input
+                  {...field}
+                  type="email"
+                  className="mt-1 p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
+                />
+              )}
+            />
+          </div>
+
+          <div className="mb-4">
+            <label
+              htmlFor="parentescoPersonal"
+              className="block text-sm font-medium text-gray-700"
+            >
+              Parentesco:
+            </label>
+            <Controller
+              name="parentescoPersonal"
+              control={control}
+              defaultValue=""
+              render={({ field }) => (
+                <input
+                  {...field}
+                  type="text"
+                  className="mt-1 p-2 w-full border rounded-md shadow-sm focus:ring focus:ring-blue-300"
+                />
+              )}
+            />
+          </div>
+        </div>
+      </div>
 
       <button
         type="submit"
         className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg mt-4"
       >
-        Enviar Solicitud
+        Generar PDF
       </button>
     </form>
   );
